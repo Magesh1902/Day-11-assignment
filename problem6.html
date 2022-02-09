@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+    border: rgb(70, 77, 114) solid 2px ;
+    margin:auto ;
+    width: 360px;
+    height: 400px;
+    padding:15px 
+}
+.block{
+    display:inline-block;
+     width:49%;
+     margin: auto;
+     box-sizing: border-box;
+     font-size: 12px;
+     font-weight:bold;
+}
+.title{
+    text-align: center;
+    font-weight:lighter;
+    color: green;
+    margin: auto;
+} 
+.heading{
+    margin: auto;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 2px;
+    padding-bottom:2px;
+    background: rgb(166, 228, 205);
+}
+.block1{
+    display:block;
+    margin: auto;
+    font-size: 12px;
+    font-weight:bold;
+    font-style:initial;
+}
+.button{
+    margin-top: 20px; 
+text-align: center;
+}
+    </style>
+</head>
+<body>
+    
+ <div class="container" >
+    <form>
+ <div class="title">
+<h2>Company Name</h2>
+ </div>
+ <div class="heading">
+    <p>Employee details </p> 
+    </div>
+<div class="block">
+<p>First Name</p>
+<input type="text" placeholder="FirstName" />
+</div>
+<div class="block">
+    <p>Last Name</p>
+    <input type="text" placeholder="LastName" />
+    </div>
+    <div class="block1">
+        <p>Email Address</p>
+        <input type="text" placeholder="Email Address" size="46" />
+        </div>
+        <div class="block1">
+            <p>Phone Number</p>
+            <input type="text" placeholder="Phone Number" size="46" maxlength="10" minlength="10"/>
+            </div>
+            <form>
+                <p>Employee Type:</p>
+           <input type="radio" id="salaried" name="employee type"
+           value ="salaried" checked> <label for="salaried">Salaried</label> 
+           <input type="radio" id="own business" name="employee type"
+           value ="own business" checked> <label for="own business" >Own Business</label>
+            </form>
+            <div class="button">
+                <input type="button" value="submit" size="100" />
+                </div>
+        </form>
+    </div>
+</body>
+</html>
